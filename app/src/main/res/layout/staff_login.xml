@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <View style="@style/Divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@id/title"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/central_staff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/username_staff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="40sp"
+            android:text="@string/login_staff"
+            android:textSize="30sp"/>
+
+        <LinearLayout
+            android:id="@+id/username_staff_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_staff"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20sp">
+
+            <ImageView
+                android:id="@+id/staffIcon"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/ic_staff"
+                android:layout_marginEnd="10sp"/>
+
+            <EditText
+                android:id="@+id/username_staff_textbox"
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:hint="@string/username"
+                android:gravity="center"
+                android:background="@drawable/textbox_design_1"
+                android:inputType="textShortMessage" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_staff_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_staff_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/passwordIcon"
+                android:layout_width="50sp"
+                android:layout_height="50sp"
+                android:src="@drawable/ic_password"
+                android:layout_marginEnd="10sp"/>
+
+            <EditText
+                android:id="@+id/password_staff_textbox"
+                android:layout_width="150sp"
+                android:layout_height="50sp"
+                android:hint="@string/password"
+                android:gravity="center"
+                android:background="@drawable/textbox_design_1"
+                android:inputType="textPassword" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submit_staff"
+            android:layout_width="150sp"
+            android:layout_height="50sp"
+            android:background="@drawable/button_design_1"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login"
+            android:textSize="20sp"
+            android:layout_marginTop="40sp"
+            android:layout_below="@id/password_staff_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

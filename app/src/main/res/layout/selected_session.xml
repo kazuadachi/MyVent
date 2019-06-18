@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        style="@style/Divider"
+        android:id="@+id/linedivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@id/title"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:id="@+id/dateContent"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/usernameContent"
+        android:layout_marginBottom="15sp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/sessionDate"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/dateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/usernameContent"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/smallContent"
+        android:layout_marginBottom="15sp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/usernameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/usernameSession"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/usernameValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/smallContent"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mediumContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15sp">
+
+        <TextView
+            android:id="@+id/smallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/smallText"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/smallValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mediumContent"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/largeContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15sp">
+
+        <TextView
+            android:id="@+id/mediumText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/medText"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/mediumValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/largeContent"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/costContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15sp">
+
+        <TextView
+            android:id="@+id/largeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/largeText"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/largeValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/costContent"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkIn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp">
+
+        <TextView
+            android:id="@+id/costText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="@string/costText"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/costValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/checkIn"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_1"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:text="@string/checkIn"
+        android:layout_marginBottom="15sp"
+        android:layout_above="@id/checkOut"/>
+
+    <Button
+        android:id="@+id/checkOut"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_1"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:text="@string/checkOut"
+        android:layout_marginBottom="15sp"
+        android:layout_above="@id/back2MainMenu"/>
+
+    <Button
+        android:id="@+id/back2MainMenu"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_design_1"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textColor="#FFFFFF"
+        android:text="@string/back2mainmenu"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150sp"/>
+
+</RelativeLayout>

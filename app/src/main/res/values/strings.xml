@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">MyVent</string>
+    <string name="welcome_message">Welcome, login as:</string>
+    <string name="student">Student</string>
+    <string name="staff">Staff</string>
+    <string name="login">Login</string>
+    <string name="login_student">Student Login</string>
+    <string name="login_staff">Staff Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login_success">What do you want to do?</string>
+    <string name="registerSession">Register New Session</string>
+    <string name="register">Register</string>
+    <string name="success_register">Registration successful!</string>
+    <string name="editSession">Edit or View Registered Session</string>
+    <string name="logout">Log Out</string>
+    <string name="searchByMatric">Search by Matric</string>
+    <string name="searchByQR">Search by QR</string>
+    <string name="matricHint"><i>Input desired matric number here</i></string>
+    <string name="getSmall">How many small items?</string>
+    <string name="getMedium">How many medium items?</string>
+    <string name="getLarge">How many large items?</string>
+    <string name="warning">TAKE NOTE</string>
+    <string name="warnMsg">: Extra items that have more space than registered will be incurred extra charges upon checking at storage warehouse.</string>
+    <string name="totalCost">Total storage cost:</string>
+    <string name="currency">MYR</string>
+    <string name="back2mainmenu">Back to Main Menu</string>
+    <string name="successRegisterMsg">This is your QR code. You can view or save it later when you choose to <b>Edit Registered Session</b>. Don\'t forget to <b>PRINT IT</b> and put the tag on each of your items.</string>
+    <string name="update">Update Session</string>
+    <string name="delete">Delete Session</string>
+    <string name="save">Save to Phone</string>
+    <string name="view">View</string>
+    <string name="currentSmallText">Small item(s) CURRENT amount:</string>
+    <string name="newSmallText">Small item(s) NEW amount:</string>
+    <string name="currentMedText">Medium item(s) CURRENT amount:</string>
+    <string name="newMedText">Medium item(s) NEW amount:</string>
+    <string name="currentLargeText">Large item(s) CURRENT amount:</string>
+    <string name="newLargeText">Large item(s) NEW amount:</string>
+    <string name="checkIn">Check In</string>
+    <string name="checkOut">Check Out</string>
+    <string name="sessionDate">Session Date:</string>
+    <string name="usernameSession">Username:</string>
+    <string name="smallText">Small item(s):</string>
+    <string name="medText">Large item(s):</string>
+    <string name="largeText">Medium item(s):</string>
+    <string name="costText">Total Cost:</string>
+
+    <string name="checkINtitle">Check In Status</string>
+    <string name="checkOUTtitle">Check Out Status</string>
+    <string name="checkINmsg">This session has been check-in successfully.</string>
+    <string name="checkOUTmsg">This session has been check-out successfully.</string>
+    <string name="checkINfail">This session has been checked in or inactive.</string>
+    <string name="checkOUTfail">This session has been checked out or inactive.</string>
+
+    <string name="sessionNulltitle">Session Registration Status</string>
+    <string name="sessionNullmsg">No item has been selected at all.</string>
+    <string name="viewSessionNullTitle">Session Request Status</string>
+    <string name="viewSessionNullMsg">You do not have any active session.</string>
+    <string name="updateSessionTitle">Update Session Status</string>
+    <string name="updateSessionMsg">Session updated successfully</string>
+    <string name="deleteSessionTitle">Delete Session Status</string>
+    <string name="deleteSessionMsg">Session deleted successfully</string>
+    <string name="searchbyMatricTitle">Search by Matric Status</string>
+    <string name="searchbyMatricMsg">No active session for this matric number</string>
+
+    <string name="smallItem">Small item maximum size (Height x Weight *Depth): <b>48cm x 32cm x 18cm</b></string>
+    <string name="mediumItem">Medium item maximum size (Height x Weight *Depth): <b>67cm x 45cm x 25cm</b></string>
+    <string name="largeItem">Large item maximum size (Height x Weight *Depth): <b>76cm x 48cm x 29cm</b></string>
+
+    <string name="itemHint"><i>Click here for more info</i></string>
+    <string name="itemHintTitle">Item Size and Examples</string>
+
+    <string name="imageSavedTitle"><b>Image Status</b></string>
+    <string name="imageSavedMsg">The QR code image has been saved in your Download folder.</string>
+
+    <string-array name="small_items">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="medium_items">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+    <string-array name="large_items">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string name="title_activity_check_in_success">CheckInSuccess</string>
+</resources>

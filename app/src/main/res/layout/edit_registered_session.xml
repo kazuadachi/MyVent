@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="40sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <View style="@style/Divider"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_alignBottom="@id/title"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/divider"
+        android:paddingBottom="20sp">
+
+        <RelativeLayout
+            android:id="@+id/qr_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/qr_code"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:adjustViewBounds="true"
+                android:layout_alignParentStart="true"/>
+
+            <Button
+                android:id="@+id/save2phone"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/save"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_design_1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/qr_content">
+
+            <RelativeLayout
+                android:id="@+id/currentSmallItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="3sp">
+
+                <TextView
+                    android:id="@+id/currentSmallItemsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/currentSmallText"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_marginStart="10sp"/>
+
+                <TextView
+                    android:id="@+id/currentSmallItemsValue"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:layout_alignEnd="@id/currentSmallItemsText"
+                    android:layout_marginEnd="55sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/newSmallItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbox_design_2"
+                android:layout_below="@id/currentSmallItems">
+            <TextView
+                android:id="@+id/newSmallItemsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/newSmallText"
+                android:layout_marginLeft="15sp"
+                android:textColor="#000000"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"/>
+
+            <Spinner
+                android:id="@+id/getSmallItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignEnd="@id/newSmallItemsText"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/currentMediumItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/newSmallItems"
+                android:padding="3sp">
+            <TextView
+                android:id="@+id/currentMediumItemsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/currentMedText"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginStart="10sp"/>
+
+            <TextView
+                android:id="@+id/currentMediumItemsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_alignEnd="@id/currentMediumItemsText"
+                android:layout_marginEnd="55sp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/newMediumItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textbox_design_2"
+                android:layout_below="@id/currentMediumItems">
+            <TextView
+                android:id="@+id/newMediumItemsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/newMedText"
+                android:layout_marginLeft="15sp"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/getMediumItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignEnd="@id/newMediumItemsText"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/currentLargeItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_below="@id/newMediumItems"
+                android:padding="3sp">
+            <TextView
+                android:id="@+id/currentLargeItemsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/currentLargeText"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_marginStart="10sp"/>
+
+            <TextView
+                android:id="@+id/currentLargeItemsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:layout_alignEnd="@id/currentLargeItemsText"
+                android:layout_marginEnd="55sp"/>
+        </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/newLargeItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/currentLargeItems"
+                android:background="@drawable/textbox_design_2">
+            <TextView
+                android:id="@+id/newLargeItemsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/newLargeText"
+                android:layout_marginLeft="15sp"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:textColor="#000000"/>
+
+            <Spinner
+                android:id="@+id/getLargeItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignEnd="@id/newLargeItemsText"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="5sp"/>
+        </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cancel"
+            android:text="@string/update"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_design_1"
+            android:layout_marginBottom="20sp"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/back2MainMenu"
+            android:text="@string/delete"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_design_1"
+            android:layout_marginBottom="20sp"/>
+
+        <Button
+            android:id="@+id/back2MainMenu"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
+            android:text="@string/back2mainmenu"
+            android:textSize="15sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_design_1"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
